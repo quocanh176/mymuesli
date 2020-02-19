@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>mymuesli - Test</title>
+
+    <meta charset="utf-8">
+    <meta name="description" content="Test">
+    <meta name="author" content="Quoc Anh Nguyen">
+
+    <link href="css/style.css" rel="stylesheet"/>
+</head>
+
+<body>
+    <div class = "title-container">
+        <span class="title">Browse Site</span>
+        <span>SELECT A TAB</span>
+    </div>
+    <div class="tabs-container">
+        ​<div class="tab">
+        <button class="tablinks col-4" onclick="openTab(event, 'topics')" id="tab1">TOPICS</button>
+        <button class="tablinks col-4" onclick="openTab(event, 'archives')" id="tab2">ARCHIVES</button>
+        <button class="tablinks col-4" onclick="openTab(event, 'pages')" id="tab3">PAGES</button>
+    </div>
+
+        ​<div id="topics" class="tabcontent">
+        </div>
+
+        <div id="archives" class="tabcontent">
+            <table class="archives-table">
+                <tr>
+                    <td class="archives-table-image-container col-2">
+                        <img src="img/row1.jpg">
+                    </td>
+                    <td class="col-10">
+                        <div class="archives-table-text-container"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="archives-table-image-container col-2">
+                        <img src="img/row2.jpg">
+                    </td>
+                    <td class="col-10">
+                        <div class="archives-table-text-container "></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="archives-table-image-container col-2">
+                        <img src="img/row3.jpg">
+                    </td>
+                    <td class="col-10">
+                        <div class="archives-table-text-container"></div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="pages" class="tabcontent">
+            <div class="text-animation">
+                JUsT a SiMPlE TexT AnIMaTioN
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js" type="text/javascript"></script>
+</body>
+
+</html>

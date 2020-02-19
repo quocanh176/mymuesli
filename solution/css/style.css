@@ -1,0 +1,174 @@
+body {
+    background-color: gray
+}
+
+.title-container {
+    color: white
+}
+
+.title {
+    font-size: x-large;
+    font-weight: bold
+}
+
+.tabs-container {
+    background-color: dimgray;
+    padding-bottom: 10px;
+    min-height: 400px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: solid black 2px
+}
+
+​/* Style the tab */
+.tab {
+    overflow: hidden;
+    background-color: #3b3935
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: #3b3935;
+    /*float: left;*/
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 7px 30px;
+    transition: 0.5s;
+    font-size: 17px;
+    color: lightyellow;
+    font-weight: bold;
+    margin-left: -3px;
+    margin-bottom: 1px
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: white;
+    color: #3b3935
+}
+
+/* Style of general tab content */
+.tabcontent {
+    display: none;
+    padding: 0px 12px;
+    border-top: none;
+    background-color: white;
+    min-height: 355px;
+    margin-top: -15px
+}
+/* Style of elements in topics tab */
+.topic
+{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: bold;
+    border-bottom: 1px solid black
+}
+
+.topic:hover {
+    background-color: #3b3935
+}
+
+.topic-name {
+    margin-right: 10px
+}
+.topic-posts {
+    color: grey
+}
+
+/* Style of elements in archives tab */
+.archives-table {
+    border: double  2px #3b3935;
+    width: 100%
+}
+
+.archives-table td {
+ border: solid 1px dimgray
+}
+
+.archives-table-image-container {
+    overflow: hidden
+}
+
+img {
+    max-width: 100%;
+    height: auto
+}
+
+/* Style of elements in pages tab */
+#pages {
+    background-color: #000;
+}
+
+.text-animation {
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 2em;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #000, #fff, #000);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 3s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0)
+}
+
+@keyframes animate {
+    0% {
+        background-position: -500%
+    }
+    100% {
+        background-position: 500%
+    }
+}
+
+/* responsive column */
+.col-1 {
+    width: 8.33%
+}
+.col-2 {
+    width: 16.66%
+}
+.col-3 {
+    width: 25%
+}
+.col-4 {
+    width: 33.33%
+}
+.col-5 {
+    width: 41.66%
+}
+.col-6 {
+    width: 50%
+}
+.col-7 {
+    width: 58.33%
+}
+.col-8 {
+    width: 66.66%
+}
+.col-9 {
+    width: 75%
+}
+.col-10 {
+    width: 83.33%
+}
+.col-11 {
+    width: 91.66%
+}
+.col-12 {
+    width: 100%
+}
+
+@media only screen and (max-width: 768px) {
+    [class*="col-"] {
+        width: 100%
+    }
+}
