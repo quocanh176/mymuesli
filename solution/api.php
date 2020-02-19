@@ -1,3 +1,35 @@
 <?php
-    echo "Test";
+
+$data = [
+    'name' => 'Test',
+	"tabs" => [
+	    "topics" => [
+	        [
+	            'id' => 0,
+                'name' => "HTML Techniques"
+            ],
+            [
+                'id' => 1,
+                'name' => "CSS Styling"
+            ],
+            [
+                'id' => 2,
+                'name' => "Flash Tutorials"
+            ],
+            [
+                'id' => 3,
+                'name' => "Web Miscellanea"
+            ],
+            [
+                'id' => 4,
+                'name' => "Site News"
+            ],
+            [
+                'id' => 5,
+                'name' => "Web Development"
+            ]
+	    ]
+	]
+];
+echo json_encode($data);
 ?>
